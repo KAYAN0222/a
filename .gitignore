@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vue build output
+dist/
+.output/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# PHP / Laravel
+vendor/
+ebda3soft-backend/vendor/
+ebda3soft-backend/.env
+ebda3soft-backend/storage/logs/*.log
+ebda3soft-backend/storage/framework/cache/
+ebda3soft-backend/storage/framework/sessions/
+ebda3soft-backend/storage/framework/views/
+ebda3soft-backend/bootstrap/cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
