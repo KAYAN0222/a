@@ -32,13 +32,12 @@ class DatabaseSeeder extends Seeder
 
         // ===== الفروع =====
         $branches = [
-            ['name_ar' => 'المقر الرئيسي - صنعاء',   'name_en' => 'Head Office - Sana\'a',  'type' => 'branch', 'city' => 'صنعاء',    'governorate' => 'أمانة العاصمة', 'phone' => '0133375710', 'is_active' => true],
-            ['name_ar' => 'فرع عدن',                  'name_en' => 'Aden Branch',             'type' => 'branch', 'city' => 'عدن',      'governorate' => 'عدن',            'phone' => '0221234567', 'is_active' => true],
-            ['name_ar' => 'فرع حضرموت - المكلا',      'name_en' => 'Hadramaut Branch',        'type' => 'branch', 'city' => 'المكلا',   'governorate' => 'حضرموت',         'phone' => '0521234567', 'is_active' => true],
-            ['name_ar' => 'مكتب سيئون',               'name_en' => 'Say\'un Office',          'type' => 'branch', 'city' => 'سيئون',    'governorate' => 'حضرموت',         'phone' => '0531234567', 'is_active' => true],
-            ['name_ar' => 'فرع الحديدة',              'name_en' => 'Hudaydah Branch',         'type' => 'branch', 'city' => 'الحديدة',  'governorate' => 'الحديدة',        'phone' => '0391234567', 'is_active' => true],
-            ['name_ar' => 'وكيل تعز',                 'name_en' => 'Taiz Agent',              'type' => 'agent',  'city' => 'تعز',      'governorate' => 'تعز',            'phone' => '0421234567', 'is_active' => true],
-            ['name_ar' => 'وكيل إب',                  'name_en' => 'Ibb Agent',               'type' => 'agent',  'city' => 'إب',       'governorate' => 'إب',             'phone' => '0461234567', 'is_active' => true],
+            ['name_ar' => 'الفرع الرئيسي الرياض',   'name_en' => 'Head Office - Riyadh',  'type' => 'branch', 'city' => 'الرياض',    'governorate' => 'أمانة العاصمة', 'phone' => '0133375710', 'is_active' => true],
+            ['name_ar' => 'فرع جدة',                  'name_en' => 'Jeddah Branch',             'type' => 'branch', 'city' => 'جدة ',      'governorate' => 'جدة',            'phone' => '0221234567', 'is_active' => true],
+            ['name_ar' => 'فرع أبها  - ',      'name_en' => 'Abha Branch',        'type' => 'branch', 'city' => 'أبها',   'governorate' => 'أبها',         'phone' => '0521234567', 'is_active' => true],
+            ['name_ar' => 'فرع مكة المكرمة ',               'name_en' => 'Makkah Office',          'type' => 'branch', 'city' => 'مكة المكرمة',    'governorate' => 'مكة المكرمة',         'phone' => '0531234567', 'is_active' => true],
+            ['name_ar' => 'وكيل عسير',              'name_en' => 'Asir  Branch',         'type' => 'branch', 'city' => 'عسير',  'governorate' => 'عسير',        'phone' => '0391234567', 'is_active' => true],
+
         ];
         foreach ($branches as $b) {
             DB::table('branches')->insert(array_merge($b, ['created_at' => now(), 'updated_at' => now()]));
@@ -246,7 +245,7 @@ class DatabaseSeeder extends Seeder
             ['key' => 'site_name_en',       'value' => 'Ebda3 Soft Systems',            'type' => 'text'],
             ['key' => 'site_phone',         'value' => '+967 01 337571',                'type' => 'text'],
             ['key' => 'site_email',         'value' => 'info@ebda3soft.com',            'type' => 'text'],
-            ['key' => 'site_address_ar',    'value' => 'صنعاء - شارع مأرب - عمارة الأكوع - الدور الرابع', 'type' => 'text'],
+            ['key' => 'site_address_ar',    'value' => ' -  الرياض ', 'type' => 'text'],
             ['key' => 'whatsapp',           'value' => '+967776400070',                 'type' => 'text'],
             ['key' => 'facebook',           'value' => 'https://facebook.com/EBDA3SOFTNET', 'type' => 'text'],
             ['key' => 'years_experience',   'value' => '12',                            'type' => 'text'],

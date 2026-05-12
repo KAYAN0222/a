@@ -3,7 +3,7 @@
     <div style="background:linear-gradient(135deg,var(--primary-dark),var(--primary));padding:50px 0;color:white;text-align:center">
       <div class="container">
         <h1 style="font-size:2rem;font-weight:800">الفروع والوكلاء</h1>
-        <p style="color:rgba(255,255,255,0.8);margin-top:10px">نمتلك شبكة واسعة من الفروع والوكلاء في جميع محافظات اليمن</p>
+        <p style="color:rgba(255,255,255,0.8);margin-top:10px">نمتلك شبكة واسعة من الفروع والوكلاء في أنحاء المملكة العربية السعودية</p>
       </div>
     </div>
     <section class="section">

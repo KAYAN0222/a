@@ -61,9 +61,9 @@
               <span style="font-size:1.3rem">💬</span> واتساب (WhatsApp)
             </a>
 
-            <a href="tel:01337571"
+            <a href="tel:0571870415"
                style="width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--primary);color:white;padding:12px;border-radius:10px;font-weight:700;margin-bottom:10px;text-decoration:none;font-size:0.9rem">
-              <span style="font-size:1.3rem">📞</span> اتصال هاتفي — 01 337571
+              <span style="font-size:1.3rem">📞</span> اتصال هاتفي — 0571870415
             </a>
 
             <a href="mailto:info@ebda3soft.com"
@@ -92,7 +92,7 @@ const input     = ref('')
 const typing    = ref(false)
 const sessionId = ref(null)
 const msgContainer = ref(null)
-const whatsapp  = '967776400070'
+const whatsapp  = '966571870415'
 
 const messages = ref([
   { role: 'bot', text: 'أهلاً وسهلاً! 👋 أنا مساعد إبداع سوفت. كيف يمكنني مساعدتك؟', time: now() },
@@ -219,7 +219,7 @@ async function scrollBottom() {
   background: white;
   cursor: pointer;
   color: var(--primary);
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Tajawal', 'Noto Kufi Arabic', sans-serif;
   transition: all 0.2s;
 }
 .chatbot-suggest:hover { background: var(--primary); color: white; border-color: var(--primary); }
@@ -237,7 +237,7 @@ async function scrollBottom() {
   padding: 10px 14px;
   border: 2px solid var(--border);
   border-radius: 20px;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Tajawal', 'Noto Kufi Arabic', sans-serif;
   font-size: 0.88rem;
   outline: none;
   transition: 0.2s;

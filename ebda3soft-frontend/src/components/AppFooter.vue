@@ -7,7 +7,7 @@
             <span style="font-size:2rem">🖥️</span>
             <span style="color:white;font-size:1.1rem;font-weight:800">إبداع سوفت</span>
           </div>
-          <p>شركة إبداع سوفت للأنظمة الخاصة المحدودة — رائدة في تطوير الأنظمة المحاسبية والإدارية في اليمن.</p>
+          <p>شركة إبداع سوفت للأنظمة الخاصة المحدودة — رائدة في تطوير الأنظمة المحاسبية والإدارية في المملكة العربية السعودية والوطن العربي.</p>
           <div class="social-links">
             <a href="https://facebook.com/EBDA3SOFTNET" target="_blank" class="social-link">f</a>
             <a href="https://twitter.com/NetEbda3" target="_blank" class="social-link">𝕏</a>
@@ -40,8 +40,9 @@
         <div>
           <h4>تواصل معنا</h4>
           <div class="footer-contact">
-            <p>📍 صنعاء - شارع مأرب - عمارة الأكوع - الدور الرابع</p>
-            <p>📞 01 337571/72/73</p>
+            <p>📍 الرياض — فروع ووكلاء في أنحاء المملكة</p>
+            <p>📞 0571870415</p>
+            <p>✏️ <a href="https://wa.me/966571870415" target="_blank" style="color:inherit">واتساب: 966571870415+</a></p>
             <p>✉️ info@ebda3soft.com</p>
             <p>🕐 8 ص - 12 ظ | 4 م - 8 م</p>
           </div>

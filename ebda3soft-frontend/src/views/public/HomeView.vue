@@ -4,8 +4,8 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>الحل الأمثل للأنظمة <span>المحاسبية والإدارية</span> في اليمن</h1>
-          <p>نقدم منذ أكثر من 12 عاماً أنظمة محوسبة متكاملة للشركات والمؤسسات بكل قطاعاتها، بطرق إبداعية تناسب احتياج كل عميل.</p>
+          <h1>الحل الأمثل للأنظمة <span>المحاسبية والإدارية</span> في المملكة العربية السعودية</h1>
+          <p>نقدم منذ أكثر من 12 عاماً أنظمة محوسبة متكاملة للشركات والمؤسسات بكل قطاعاتها، بطرق إبداعية تناسب احتياج كل عميل داخل المملكة والوطن العربي.</p>
           <div class="hero-btns">
             <router-link to="/products" class="btn btn-accent btn-lg">🖥️ تصفح الأنظمة</router-link>
             <router-link to="/request" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.5);color:white">📋 طلب نظام</router-link>
@@ -131,7 +131,7 @@
         <p style="color:rgba(255,255,255,0.8);font-size:1.05rem;margin-bottom:36px">تواصل معنا اليوم وسيقوم فريق خبرائنا بمساعدتك في اختيار الحل الأمثل</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
           <router-link to="/request" class="btn btn-accent btn-lg">📋 طلب نظام الآن</router-link>
-          <a href="https://wa.me/967776400070" target="_blank" class="btn btn-lg" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.3)">💬 تواصل عبر واتساب</a>
+          <a href="https://wa.me/966571870415" target="_blank" class="btn btn-lg" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.3)">💬 تواصل عبر واتساب</a>
         </div>
       </div>
     </section>
@@ -150,7 +150,7 @@ const recentNews = ref([])
 const stats = [
   { num: '12+', label: 'عاماً من الخبرة' },
   { num: '1500+', label: 'عميل راضٍ' },
-  { num: '15+', label: 'فرع ووكيل' },
+  { num: '20+', label: 'فرع ووكيل بالمملكة' },
   { num: '16', label: 'نظام متخصص' },
 ]
 
@@ -179,7 +179,7 @@ const typeLabels = { news: 'خبر', blog: 'مقال', event: 'فعالية' }
 
 function formatDate(d) {
   if (!d) return ''
-  return new Date(d).toLocaleDateString('ar-YE', { year: 'numeric', month: 'long', day: 'numeric' })
+  return new Date(d).toLocaleDateString('ar-SA', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
 onMounted(async () => {

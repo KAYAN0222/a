@@ -43,11 +43,11 @@
             <h2 style="font-size:1.3rem;font-weight:800;color:var(--primary);margin-bottom:24px">معلومات التواصل</h2>
             <div class="card card-body" style="margin-bottom:16px;display:flex;gap:16px;align-items:flex-start">
               <span style="font-size:1.5rem">📍</span>
-              <div><strong>العنوان</strong><br><span style="color:var(--text-muted);font-size:0.9rem">صنعاء - شارع مأرب - عمارة الأكوع - الدور الرابع</span></div>
+              <div><strong>العنوان</strong><br><span style="color:var(--text-muted);font-size:0.9rem">الرياض، المملكة العربية السعودية — فروع ووكلاء في أنحاء المملكة</span></div>
             </div>
             <div class="card card-body" style="margin-bottom:16px;display:flex;gap:16px;align-items:center">
               <span style="font-size:1.5rem">📞</span>
-              <div><strong>الهاتف</strong><br><span style="color:var(--text-muted);font-size:0.9rem">01 337571/72/73/74/75</span></div>
+              <div><strong>الهاتف / واتساب</strong><br><span style="color:var(--text-muted);font-size:0.9rem">0571870415 &nbsp;| <a href="https://wa.me/966571870415" target="_blank" style="color:var(--primary)">فتح واتساب</a></span></div>
             </div>
             <div class="card card-body" style="margin-bottom:16px;display:flex;gap:16px;align-items:center">
               <span style="font-size:1.5rem">✉️</span>
