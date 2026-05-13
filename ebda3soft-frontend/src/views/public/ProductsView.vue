@@ -80,9 +80,14 @@ function debouncedSearch() {
 }
 
 onMounted(async () => {
-  const [p, c] = await Promise.all([api.get('/products'), api.get('/categories')])
-  products.value = p.data
-  categories.value = c.data
-  loading.value = false
+  try {
+    const [p, c] = await Promise.all([api.get('/products'), api.get('/categories')])
+    products.value = p.data
+    categories.value = c.data
+  } catch (err) {
+    console.error("Error fetching products:", err)
+  } finally {
+    loading.value = false
+  }
 })
 </script>
