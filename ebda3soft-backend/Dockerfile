@@ -33,7 +33,7 @@ COPY . /var/www/html
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # تحميل حزم Laravel
-RUN composer install --no-interaction --optimize-autoloader --no-dev --no-scripts
+RUN composer install --no-interaction --optimize-autoloader --no-dev --no-scripts 
 # إعطاء الصلاحيات اللازمة لمجلدات التخزين
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
