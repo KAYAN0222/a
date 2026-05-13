@@ -437,6 +437,8 @@ onMounted(async () => {
     ]);
     featuredProducts.value = p.data.slice(0, 6);
     recentNews.value = n.data.data || [];
+  } catch (error) {
+    console.error("Error fetching home data:", error);
   } finally {
     loadingProducts.value = false;
     loadingNews.value = false;

@@ -6,6 +6,9 @@ services:
     rootDir: ebda3soft-frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://ebda3soft-backend.onrender.com/api
     routes:
       - type: rewrite
         source: /*
