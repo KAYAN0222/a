@@ -1,0 +1,60 @@
+services:
+  # 1. خدمة الواجهة الأمامية (Frontend - Vue.js)
+  - type: web
+    name: ebda3soft-frontend
+    env: static
+    rootDir: ebda3soft-frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    plan: free
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+  # 2. خدمة الخادم الخلفي (Backend - Laravel Docker)
+  - type: web
+    name: ebda3soft-backend
+    env: docker
+    rootDir: ebda3soft-backend
+    plan: free
+    envVars:
+      - key: APP_NAME
+        value: Ebda3soft
+      - key: APP_ENV
+        value: production
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_DEBUG
+        value: "false"
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_HOST
+        fromDatabase:
+          name: ebda3soft-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: ebda3soft-db
+          property: port
+      - key: DB_DATABASE
+        fromDatabase:
+          name: ebda3soft-db
+          property: database
+      - key: DB_USERNAME
+        fromDatabase:
+          name: ebda3soft-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: ebda3soft-db
+          property: password
+
+databases:
+  # 3. قاعدة البيانات (PostgreSQL)
+  - name: ebda3soft-db
+    databaseName: ebda3soft
+    user: db_admin
+    plan: free
