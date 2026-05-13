@@ -35,6 +35,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # تحميل حزم Laravel
 RUN composer install --no-interaction --optimize-autoloader --no-dev --no-scripts 
 # إعطاء الصلاحيات اللازمة لمجلدات التخزين
+RUN mkdir -p /var/www/html/storage /var/www/html/bootstrap/cache
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
 EXPOSE 80
