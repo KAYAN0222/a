@@ -3,34 +3,19 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
+// المسار الرئيسي
 Route::get('/', function () {
-    return view('welcome'); // أو صفحة تسجيل الدخول الخاصة بمشروعك
-}); // <-- هذا هو القوس الذي كان مفقوداً في كودك
-
-Route::get('/super-fix', function () {
-    try {
-        $output = "";
-        
-        // 1. مسح جميع الملفات المؤقتة والتكوينات التي قد تسبب تعارضاً مع الكود الجديد
-        Artisan::call('optimize:clear');
-        $output .= "✅ تم تنظيف الكاش والإعدادات بنجاح.<br>";
-
-        // 2. تشغيل الميغريشن الإجباري
-        Artisan::call('migrate', ['--force' => true]);
-        $output .= "✅ تمت الميغريشن بنجاح!<br>";
-        
-        // 3. عرض المخرجات التفصيلية
-        $output .= nl2br(Artisan::output());
-
-        return $output;
-
-    } catch (\Throwable $e) {
-        // اصطياد جميع أنواع الأخطاء (Exceptions و Fatal Errors)
-        return "❌ فشل جذري بسبب:<br> " . 
-               "الرسالة: " . $e->getMessage() . "<br>" .
-               "في الملف: " . $e->getFile() . "<br>" .
-               "السطر: " . $e->getLine();
-    }
+    return view('welcome');
 });
 
-// هنا تبدأ بإضافة مسارات مشروع "إبداع سوفت" الفعلية
+// مسار الإصلاح الجذري والميغريشن
+Route::get('/super-fix', function () {
+    try {
+        Artisan::call('optimize:clear');
+        Artisan::call('migrate', ['--force' => true]);
+        
+        return "✅ تم تنظيف الكاش وإنشاء الجداول بنجاح!<br><br>" . nl2br(Artisan::output());
+    } catch (\Throwable $e) {
+        return "❌ فشل بسبب: " . $e->getMessage() . " في السطر " . $e->getLine();
+    }
+});
