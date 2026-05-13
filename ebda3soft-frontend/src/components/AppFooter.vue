@@ -16,7 +16,7 @@
           </p>
           <div class="social-links">
             <a
-              href="https://facebook.com/EBDA3SOFTNET"
+              href="https://facebook.com/SOFTPRO"
               target="_blank"
               class="social-link"
               >f</a
@@ -28,12 +28,12 @@
               >𝕏</a
             >
             <a
-              href="https://youtube.com/c/ebda3soft123"
+              href="https://youtube.com/c/softpro"
               target="_blank"
               class="social-link"
               >▶</a
             >
-            <a href="https://t.me/ebda3soft" target="_blank" class="social-link"
+            <a href="https://t.me/softpro" target="_blank" class="social-link"
               >✈</a
             >
           </div>
@@ -74,7 +74,7 @@
                 >واتساب: 966571870415+</a
               >
             </p>
-            <p>✉️ info@ebda3soft.com</p>
+            <p>✉️ info@softpro.com</p>
             <p>🕐 8 ص - 12 ظ | 4 م - 8 م</p>
           </div>
         </div>

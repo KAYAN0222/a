@@ -51,7 +51,7 @@
             </div>
             <div class="card card-body" style="margin-bottom:16px;display:flex;gap:16px;align-items:center">
               <span style="font-size:1.5rem">✉️</span>
-              <div><strong>البريد الإلكتروني (Email)</strong><br><span style="color:var(--text-muted);font-size:0.9rem">info@ebda3soft.com</span></div>
+              <div><strong>البريد الإلكتروني (Email)</strong><br><span style="color:var(--text-muted);font-size:0.9rem">info@softpro.com</span></div>
             </div>
             <div class="card card-body" style="display:flex;gap:16px;align-items:flex-start">
               <span style="font-size:1.5rem">🕐</span>

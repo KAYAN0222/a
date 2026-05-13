@@ -48,7 +48,7 @@
                 <a href="https://wa.me/967776400070" target="_blank" class="btn" style="width:100%;justify-content:center;background:#25d366;color:white">💬 تواصل عبر واتساب</a>
                 <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border)">
                   <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:8px">📞 01 337571/72/73</p>
-                  <p style="font-size:0.85rem;color:var(--text-muted)">✉️ info@ebda3soft.com</p>
+                  <p style="font-size:0.85rem;color:var(--text-muted)">✉️ info@softpro.com</p>
                 </div>
               </div>
             </div>

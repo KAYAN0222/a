@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         // ===== مستخدم المدير =====
         DB::table('users')->insert([
             'name'       => 'مدير النظام',
-            'email'      => 'admin@ebda3soft.com',
+            'email'      => 'admin@softpro.com',
             'password'   => Hash::make('Admin@123456'),
             'role_id'    => 1,
             'is_active'  => true,
@@ -242,9 +242,9 @@ class DatabaseSeeder extends Seeder
         // ===== إعدادات الموقع =====
         $settings = [
             ['key' => 'site_name_ar',       'value' => 'SoftPro - نظامك المستقبلي للأنظمة الخاصة',  'type' => 'text'],
-            ['key' => 'site_name_en',       'value' => 'Ebda3 Soft Systems',            'type' => 'text'],
+            ['key' => 'site_name_en',       'value' => 'SoftPro Systems',            'type' => 'text'],
             ['key' => 'site_phone',         'value' => '+966 57 5777777',                'type' => 'text'],
-            ['key' => 'site_email',         'value' => 'info@ebda3soft.com',            'type' => 'text'],
+            ['key' => 'site_email',         'value' => 'info@softpro.com',            'type' => 'text'],
             ['key' => 'site_address_ar',    'value' => ' -  الرياض ', 'type' => 'text'],
             ['key' => 'whatsapp',           'value' => '+966 5777777',                 'type' => 'text'],
             ['key' => 'facebook',           'value' => 'https://facebook.com/', 'type' => 'text'],

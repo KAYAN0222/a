@@ -31,7 +31,7 @@
             type="email"
             class="form-control"
             required
-            placeholder="admin@ebda3soft.com"
+            placeholder="admin@softpro.com"
             autofocus
           />
         </div>
@@ -63,7 +63,7 @@
           color: var(--text-muted);
         "
       >
-        حساب افتراضي: admin@ebda3soft.com / Admin@123456
+        حساب افتراضي: admin@softpro.com / Admin@123456
       </p>
     </div>
   </div>

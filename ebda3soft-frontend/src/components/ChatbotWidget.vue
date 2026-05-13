@@ -196,7 +196,7 @@
             </a>
 
             <a
-              href="mailto:info@ebda3soft.com"
+              href="mailto:info@softpro.com"
               style="
                 width: 100%;
                 display: flex;
