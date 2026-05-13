@@ -93,13 +93,13 @@ const monthNames = { '01':'يناير','02':'فبراير','03':'مارس','04':
 function fmtMonth(m) { const [, mo] = m.split('-'); return monthNames[mo] || m }
 
 onMounted(async () => {
-  // Dashboard stats
-  const { data: dash } = await api.get('/admin/dashboard')
-  stats.value = dash.stats
-  recentOrders.value = dash.recent_orders || []
-
-  // Analytics charts
   try {
+    // Dashboard stats
+    const { data: dash } = await api.get('/admin/dashboard')
+    stats.value = dash.stats
+    recentOrders.value = dash.recent_orders || []
+
+    // Analytics charts
     const { data: ana } = await api.get('/admin/analytics')
     topProducts.value = ana.top_products || []
 

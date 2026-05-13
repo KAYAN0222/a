@@ -93,5 +93,12 @@ async function submit() {
   } catch (e) { error.value = e.response?.data?.message || 'حدث خطأ' }
   finally { submitting.value = false }
 }
-onMounted(async () => { const {data} = await api.get('/products'); products.value = data })
+onMounted(async () => {
+  try {
+    const { data } = await api.get('/products')
+    products.value = data
+  } catch(e) {
+    console.error(e)
+  }
+})
 </script>

@@ -35,8 +35,11 @@ const loading = ref(true)
 const open = ref(null)
 const toggle = id => { open.value = open.value === id ? null : id }
 onMounted(async () => {
-  const { data } = await api.get('/faqs')
-  faqs.value = data
-  loading.value = false
+  try {
+    const { data } = await api.get('/faqs')
+    faqs.value = data
+  } catch(e) {} finally {
+    loading.value = false
+  }
 })
 </script>

@@ -165,7 +165,11 @@ async function sendReply() {
 }
 
 onMounted(async () => {
-  const { data } = await api.get('/products')
-  products.value = data
+  try {
+    const { data } = await api.get('/products')
+    products.value = data
+  } catch (error) {
+    console.error("Error loading products:", error)
+  }
 })
 </script>

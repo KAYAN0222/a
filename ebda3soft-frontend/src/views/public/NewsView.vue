@@ -45,10 +45,13 @@ async function load() {
   loading.value = true
   const params = { page: page.value, per_page: 9 }
   if (typeFilter.value) params.type = typeFilter.value
-  const { data } = await api.get('/posts', { params })
-  posts.value = data.data || []
-  meta.value = { last_page: data.last_page, current_page: data.current_page }
-  loading.value = false
+  try {
+    const { data } = await api.get('/posts', { params })
+    posts.value = data.data || []
+    meta.value = { last_page: data.last_page, current_page: data.current_page }
+  } catch(e) {} finally {
+    loading.value = false
+  }
 }
 onMounted(load)
 </script>

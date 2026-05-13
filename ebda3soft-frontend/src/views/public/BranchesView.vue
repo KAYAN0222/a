@@ -112,8 +112,11 @@ const filtered = computed(() =>
     : branches.value,
 );
 onMounted(async () => {
-  const { data } = await api.get("/branches");
-  branches.value = data;
-  loading.value = false;
+  try {
+    const { data } = await api.get("/branches");
+    branches.value = data;
+  } catch(e) {} finally {
+    loading.value = false;
+  }
 });
 </script>
