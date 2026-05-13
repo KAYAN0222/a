@@ -24,7 +24,7 @@
               </div>
               <div class="form-group">
                 <label class="form-label">رقم الجوال *</label>
-                <input v-model="form.phone" class="form-control" required placeholder="+967..." />
+                <input v-model="form.phone" class="form-control" required placeholder="+966..." />
               </div>
             </div>
             <div class="form-group">

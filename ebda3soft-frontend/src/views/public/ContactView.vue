@@ -18,7 +18,7 @@
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
                 <div class="form-group">
                   <label class="form-label">رقم الجوال</label>
-                  <input v-model="form.phone" class="form-control" placeholder="+967..." />
+                  <input v-model="form.phone" class="form-control" placeholder="+966..." />
                 </div>
                 <div class="form-group">
                   <label class="form-label">البريد الإلكتروني (Email)</label>

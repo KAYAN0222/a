@@ -3,16 +3,39 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div style="display:flex;align-items:center;gap:10px">
-            <span style="font-size:2rem">🖥️</span>
-            <span style="color:white;font-size:1.1rem;font-weight:800">إبداع سوفت</span>
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span style="font-size: 2rem">🖥️</span>
+            <span style="color: white; font-size: 1.1rem; font-weight: 800"
+              >SoftPro - نظامك المستقبلي</span
+            >
           </div>
-          <p>شركة إبداع سوفت للأنظمة الخاصة المحدودة — رائدة في تطوير الأنظمة المحاسبية والإدارية في المملكة العربية السعودية والوطن العربي.</p>
+          <p>
+            شركة SoftPro - نظامك المستقبلي للأنظمة الخاصة المحدودة — رائدة في
+            تطوير الأنظمة المحاسبية والإدارية في المملكة العربية السعودية والوطن
+            العربي.
+          </p>
           <div class="social-links">
-            <a href="https://facebook.com/EBDA3SOFTNET" target="_blank" class="social-link">f</a>
-            <a href="https://twitter.com/NetEbda3" target="_blank" class="social-link">𝕏</a>
-            <a href="https://youtube.com/c/ebda3soft123" target="_blank" class="social-link">▶</a>
-            <a href="https://t.me/ebda3soft" target="_blank" class="social-link">✈</a>
+            <a
+              href="https://facebook.com/EBDA3SOFTNET"
+              target="_blank"
+              class="social-link"
+              >f</a
+            >
+            <a
+              href="https://twitter.com/NetEbda3"
+              target="_blank"
+              class="social-link"
+              >𝕏</a
+            >
+            <a
+              href="https://youtube.com/c/ebda3soft123"
+              target="_blank"
+              class="social-link"
+              >▶</a
+            >
+            <a href="https://t.me/ebda3soft" target="_blank" class="social-link"
+              >✈</a
+            >
           </div>
         </div>
 
@@ -42,7 +65,15 @@
           <div class="footer-contact">
             <p>📍 الرياض — فروع ووكلاء في أنحاء المملكة</p>
             <p>📞 0571870415</p>
-            <p>✏️ <a href="https://wa.me/966571870415" target="_blank" style="color:inherit">واتساب: 966571870415+</a></p>
+            <p>
+              ✏️
+              <a
+                href="https://wa.me/966571870415"
+                target="_blank"
+                style="color: inherit"
+                >واتساب: 966571870415+</a
+              >
+            </p>
             <p>✉️ info@ebda3soft.com</p>
             <p>🕐 8 ص - 12 ظ | 4 م - 8 م</p>
           </div>
@@ -51,7 +82,8 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        © {{ new Date().getFullYear() }} إبداع سوفت للأنظمة الخاصة المحدودة — جميع الحقوق محفوظة
+        © {{ new Date().getFullYear() }} SoftPro - نظامك المستقبلي للأنظمة
+        الخاصة المحدودة — جميع الحقوق محفوظة
       </div>
     </div>
   </footer>

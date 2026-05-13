@@ -42,7 +42,7 @@ class ChatbotController extends Controller
     private function chatWithOpenAI(string $msg, string $sessionId, string $apiKey)
     {
         // سياق الشركة
-        $systemPrompt = "أنت مساعد ذكي لشركة إبداع سوفت للأنظمة الخاصة المحدودة في المملكة .
+        $systemPrompt = "أنت مساعد ذكي لشركة SoftPro - نظامك المستقبلي للأنظمة الخاصة المحدودة في المملكة .
 الشركة تأسست عام 2012 وتقدم أنظمة محاسبية وإدارية متخصصة.
 العنوان:  - الرياض - شارع الملك خالد - عمارة الروضة - الدور الرابع.
 الهاتف: 577777777.
@@ -107,7 +107,7 @@ class ChatbotController extends Controller
             $reply = $bestMatch->answer;
             $found = true;
         } elseif ($this->isGreeting($userMsg)) {
-            $reply = 'أهلاً وسهلاً! 👋 أنا مساعد إبداع سوفت. كيف يمكنني مساعدتك؟';
+            $reply = 'أهلاً وسهلاً! 👋 أنا مساعد SoftPro - نظامك المستقبلي. كيف يمكنني مساعدتك؟';
             $found = true;
         } else {
             $reply = "عذراً، لم أتمكن من فهم سؤالك. 🤔\nتواصل مع فريقنا مباشرة:\n📞 01 337571\n💬 واتساب: 967776400070+\n✉️ info@ebda3soft.com";
@@ -125,7 +125,7 @@ class ChatbotController extends Controller
 
     private function getSuggestions(): array
     {
-        return ['ما هي أنظمة إبداع سوفت؟', 'كيف أطلب نظاماً؟', 'ما هي أسعار الأنظمة؟', 'أين مكاتب الشركة؟', 'كيف أفتح تذكرة دعم؟'];
+        return ['ما هي أنظمة SoftPro - نظامك المستقبلي؟', 'كيف أطلب نظاماً؟', 'ما هي أسعار الأنظمة؟', 'أين مكاتب الشركة؟', 'كيف أفتح تذكرة دعم؟'];
     }
 
     private function isGreeting(string $text): bool

@@ -14,6 +14,32 @@ use App\Models\Faq;
 use App\Models\Setting;
 
 // =====================================================
+// مسار تشغيل السيدر (للبيئة التطويرية فقط)
+// =====================================================
+Route::get('/seed-database/{secret}', function ($secret) {
+    // مفتاح سري للحماية - غيّره لمفتاح آخر
+    if ($secret !== 'ebda3soft-seed-2024') {
+        return response()->json(['message' => 'غير مصرح'], 403);
+    }
+
+    try {
+        \Artisan::call('migrate:fresh', ['--seed' => true, '--force' => true]);
+        $output = \Artisan::output();
+        return response()->json([
+            'success' => true,
+            'message' => '✅ تم تحديث قاعدة البيانات بنجاح',
+            'output'  => $output,
+        ]);
+    } catch (\Exception $e) {
+        return response()->json([
+            'success' => false,
+            'message' => '❌ حدث خطأ',
+            'error'   => $e->getMessage(),
+        ], 500);
+    }
+});
+
+// =====================================================
 // المسارات العامة (بدون مصادقة)
 // =====================================================
 

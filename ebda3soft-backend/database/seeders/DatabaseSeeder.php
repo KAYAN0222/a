@@ -228,10 +228,10 @@ class DatabaseSeeder extends Seeder
 
         // ===== الاستفسارات المتكررة =====
         $faqs = [
-            ['question_ar' => 'ما هي أنظمة إبداع سوفت؟',           'answer_ar' => 'إبداع سوفت تقدم مجموعة متكاملة من الأنظمة المحاسبية والإدارية للشركات والمؤسسات في اليمن وخارجها.'],
+            ['question_ar' => 'ما هي أنظمة SoftPro - نظامك المستقبلي؟',           'answer_ar' => 'SoftPro - نظامك المستقبلي تقدم مجموعة متكاملة من الأنظمة المحاسبية والإدارية للشركات والمؤسسات في المملكة وخارجها.'],
             ['question_ar' => 'كيف يمكنني طلب نظام؟',              'answer_ar' => 'يمكنك التواصل معنا عبر واتساب أو ملء نموذج طلب النظام في الموقع وسيتواصل معك فريق المبيعات.'],
             ['question_ar' => 'هل يوجد دعم فني بعد الشراء؟',       'answer_ar' => 'نعم، نوفر دعماً فنياً متكاملاً لعملائنا عبر الهاتف والواتساب والزيارات الميدانية.'],
-            ['question_ar' => 'هل يمكن تخصيص النظام حسب احتياجاتي؟','answer_ar' => 'نعم، توفر إبداع سوفت حلولاً مخصصة تتناسب مع احتياج كل عميل على حده.'],
+            ['question_ar' => 'هل يمكن تخصيص النظام حسب احتياجاتي؟','answer_ar' => 'نعم، توفر SoftPro - نظامك المستقبلي حلولاً مخصصة تتناسب مع احتياج كل عميل على حده.'],
             ['question_ar' => 'ما هي تكلفة الأنظمة؟',              'answer_ar' => 'تختلف التكلفة حسب النظام وحجم المؤسسة، يرجى التواصل معنا للحصول على عرض سعر مخصص.'],
             ['question_ar' => 'هل يعمل النظام بدون إنترنت؟',       'answer_ar' => 'نعم، معظم أنظمتنا تعمل على الشبكة المحلية (LAN) بدون الحاجة لاتصال دائم بالإنترنت.'],
         ];
@@ -241,13 +241,13 @@ class DatabaseSeeder extends Seeder
 
         // ===== إعدادات الموقع =====
         $settings = [
-            ['key' => 'site_name_ar',       'value' => 'إبداع سوفت للأنظمة الخاصة',  'type' => 'text'],
+            ['key' => 'site_name_ar',       'value' => 'SoftPro - نظامك المستقبلي للأنظمة الخاصة',  'type' => 'text'],
             ['key' => 'site_name_en',       'value' => 'Ebda3 Soft Systems',            'type' => 'text'],
-            ['key' => 'site_phone',         'value' => '+967 01 337571',                'type' => 'text'],
+            ['key' => 'site_phone',         'value' => '+966 57 5777777',                'type' => 'text'],
             ['key' => 'site_email',         'value' => 'info@ebda3soft.com',            'type' => 'text'],
             ['key' => 'site_address_ar',    'value' => ' -  الرياض ', 'type' => 'text'],
-            ['key' => 'whatsapp',           'value' => '+967776400070',                 'type' => 'text'],
-            ['key' => 'facebook',           'value' => 'https://facebook.com/EBDA3SOFTNET', 'type' => 'text'],
+            ['key' => 'whatsapp',           'value' => '+966 5777777',                 'type' => 'text'],
+            ['key' => 'facebook',           'value' => 'https://facebook.com/', 'type' => 'text'],
             ['key' => 'years_experience',   'value' => '12',                            'type' => 'text'],
             ['key' => 'clients_count',      'value' => '1500+',                         'type' => 'text'],
             ['key' => 'branches_count',     'value' => '15+',                           'type' => 'text'],
