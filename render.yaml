@@ -8,7 +8,10 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: https://ebda3soft-backend.onrender.com/api
+        fromService:
+          type: web
+          name: ebda3soft-backend
+          envVarKey: RENDER_EXTERNAL_URL
     routes:
       - type: rewrite
         source: /*
